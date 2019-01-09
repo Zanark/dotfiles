@@ -1,0 +1,60 @@
+{
+	"name": "amethyst-theme",
+	"displayName": "Amethyst Themes",
+	"description": "A set of very purple dark themes, based on the built-in Dark+ theme",
+	"version": "2.1.1",
+	"publisher": "eamodio",
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"purple",
+		"violet",
+		"dark"
+	],
+	"galleryBanner": {
+		"color": "#7d16bf",
+		"theme": "dark"
+	},
+	"icon": "images/icon.png",
+	"homepage": "https://github.com/eamodio/vscode-amethyst-theme/blob/master/README.md",
+	"bugs": {
+		"url": "https://github.com/eamodio/vscode-amethyst-theme/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/eamodio/vscode-amethyst-theme.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Amethyst",
+				"uiTheme": "vs-dark",
+				"path": "./themes/amethyst-theme.json"
+			},
+			{
+				"label": "Amethyst Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-amethyst-theme.json"
+			},
+			{
+				"label": "Amethyst Dark (Higher Contrast)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-amethyst-contrast-theme.json"
+			}
+		]
+	},
+	"scripts": {
+		"pack": "git clean -xdf && vsce package",
+		"pub": "git clean -xdf && vsce publish"
+	},
+	"__metadata": {
+		"id": "b66a8ae1-46ae-4b44-b13d-38b033bc8009",
+		"publisherId": "678d198b-9b2e-49d3-96ff-6d801c9575df",
+		"publisherDisplayName": "Eric Amodio"
+	}
+}

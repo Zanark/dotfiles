@@ -1,0 +1,17 @@
+[Added Associations]
+image/jpeg=xviewer.desktop;
+image/gif=xviewer.desktop;
+application/vnd.debian.binary-package=gdebi.desktop;
+video/x-matroska=vlc.desktop;xplayer.desktop;
+application/pdf=xreader.desktop;
+font/ttf=org.gnome.font-viewer.desktop;
+image/png=xviewer.desktop;
+application/zip=org.gnome.FileRoller.desktop;
+video/x-flv=xplayer.desktop;
+video/ogg=xplayer.desktop;
+video/mp4=vlc.desktop;xplayer.desktop;
+font/otf=org.gnome.font-viewer.desktop;
+
+[Default Applications]
+x-scheme-handler/tg=telegramdesktop.desktop
+video/mp4=vlc.desktop

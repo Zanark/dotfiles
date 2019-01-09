@@ -1,0 +1,12 @@
+[2019-01-09 00:03:22.416] [exthost] [info] extension host started
+[2019-01-09 00:03:22.436] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-01-09 00:03:22.436] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/Softwares/VSCode-linux-x64/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-01-09 00:03:22.461] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-01-09 00:03:22.461] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/Softwares/VSCode-linux-x64/resources/app/extensions/emmet/dist/extension
+[2019-01-09 00:03:22.469] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-01-09 00:03:22.469] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/Softwares/VSCode-linux-x64/resources/app/extensions/git/dist/main
+[2019-01-09 00:03:22.611] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-01-09 00:03:22.611] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/Softwares/VSCode-linux-x64/resources/app/extensions/merge-conflict/dist/extension
+[2019-01-09 00:03:22.618] [exthost] [info] ExtensionService#_doActivateExtension lihui.vs-color-picker {"startup":true,"activationEvent":"*"}
+[2019-01-09 00:03:22.618] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/.vscode/extensions/lihui.vs-color-picker-1.0.0/out/src/extension
+[2019-01-09 00:03:22.650] [exthost] [info] eager extensions activated

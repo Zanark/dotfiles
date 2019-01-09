@@ -1,0 +1,52 @@
+{
+    "telemetry.machineId": "62862b62902f68633ef78313c8101363c3926b9035850228396848f381ff7d9b",
+    "theme": "vs-dark",
+    "themeBackground": "#120024",
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "backupPath": "/home/zanark/.config/Code/Backups/1546712443068",
+            "uiState": {
+                "mode": 1,
+                "x": 14,
+                "y": 44,
+                "width": 619,
+                "height": 1022
+            }
+        }
+    },
+    "openedPathsList": {
+        "workspaces2": [
+            "file:///home/zanark/CODING/i3lock-fancy",
+            "file:///home/zanark/.config/i3",
+            "file:///home/zanark/.config/polybar",
+            "file:///home/zanark/.config",
+            "file:///home/zanark/CODING/FML"
+        ],
+        "files2": [
+            "file:///home/zanark/test",
+            "file:///home/zanark/.config/polybar/config.purple",
+            "file:///home/zanark/.config/gtk-3.0/gtk.css",
+            "file:///home/zanark/.config/polybar/config.temp",
+            "file:///home/zanark/.config/polybar/config",
+            "file:///home/zanark/.config/libinput-gestures.conf",
+            "file:///home/zanark/.Xdefaults",
+            "file:///home/zanark/CODING/bash-it/themes/redline/powerline.base.bash",
+            "file:///home/zanark/.Xresorces",
+            "file:///home/zanark/CODING/bash-it/themes/redline/redline.theme.bash",
+            "file:///home/zanark/.bashrc",
+            "file:///home/zanark/.config/i3/config",
+            "file:///home/zanark/.config/compton.conf",
+            "file:///home/zanark/mpvbg.sh",
+            "file:///home/zanark/mpvbg",
+            "file:///home/zanark/CODING/foo-Wallpaper-Feh-Gif/back4.sh",
+            "file:///home/zanark/.config/gtk-3.0/settings.ini",
+            "file:///home/zanark/.Xsession",
+            "file:///home/zanark/.config/polybar/launch.sh",
+            "file:///home/zanark/.i3/config",
+            "file:///etc/i3/config",
+            "file:///home/zanark/.bash"
+        ]
+    },
+    "pickerWorkingDir": "/etc/i3"
+}

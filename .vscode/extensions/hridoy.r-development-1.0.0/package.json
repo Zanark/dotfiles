@@ -1,0 +1,43 @@
+{
+	"name": "r-development",
+	"displayName": "R Development",
+	"description": "R language devlopment Toolkit",
+	"version": "1.0.0",
+	"publisher": "Hridoy",
+	"icon": "img/icon.png",
+	"galleryBanner": {
+		"color": "#1E81C1",
+		"theme": "light"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hridoy/r-devleopment-vscode"
+	},
+	"keywords": [
+		"R",
+		"R Snippet",
+		"R Snippets",
+		"R Languange",
+		"R Programming"
+	],
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "'R'",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "abe23278-ed31-4e1b-b43b-b2db2a4b18ff",
+		"publisherId": "7313be19-41f9-40d9-a1d6-33e5476a9e6e",
+		"publisherDisplayName": "Hridoy"
+	}
+}

@@ -1,0 +1,284 @@
+{
+	"name": "r",
+	"displayName": "R",
+	"description": "Support for R language(run,syntax,snippet)",
+	"version": "1.0.2",
+	"author": "Yuki Ueda",
+	"license": "SEE LICENSE IN LICENSE",
+	"publisher": "Ikuyadeu",
+	"icon": "images/Rlogo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Ikuyadeu/vscode-R"
+	},
+	"bugs": {
+		"url": "https://github.com/Ikuyadeu/vscode-R/issues"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets",
+		"Other"
+	],
+	"keywords": [
+		"R",
+		"R language",
+		"R documentation",
+		"R Markdown"
+	],
+	"engines": {
+		"vscode": "^1.27.0"
+	},
+	"activationEvents": [
+		"onLanguage:r",
+		"workspaceContains:*.r|.rd|.rmd",
+		"onCommand:r.createRTerm",
+		"onCommand:r.runSource",
+		"onCommand:r.runSourcewithEcho",
+		"onCommand:r.runSelection",
+		"onCommand:r.createGitignore"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"languages": [
+			{
+				"id": "r",
+				"extensions": [
+					".r",
+					".rhistory",
+					".rprofile",
+					".rt"
+				],
+				"aliases": [
+					"R",
+					"r"
+				],
+				"firstLine": "^#!/.*\\bRscript\\b",
+				"configuration": "./r-configuration.json"
+			},
+			{
+				"id": "rd",
+				"extensions": [
+					".rd"
+				],
+				"aliases": [
+					"R documentation",
+					"r documentation"
+				],
+				"configuration": "./rd-configuration.json"
+			},
+			{
+				"id": "rmd",
+				"extensions": [
+					".rmd"
+				],
+				"aliases": [
+					"R Markdown",
+					"r markdown"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "r",
+				"path": "./snippets/r-snippets.json"
+			},
+			{
+				"language": "rd",
+				"path": "./snippets/r-snippets.json"
+			},
+			{
+				"language": "rmd",
+				"path": "./snippets/markdown.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "r",
+				"scopeName": "source.r",
+				"path": "./syntax/r.json"
+			},
+			{
+				"language": "rd",
+				"scopeName": "text.tex.latex.rd",
+				"path": "./syntax/Rd (R Documentation).tmLanguage"
+			},
+			{
+				"language": "rmd",
+				"scopeName": "text.html.markdown.redcarpet",
+				"path": "./syntax/Markdown Redcarpet.tmLanguage"
+			}
+		],
+		"commands": [
+			{
+				"title": "Create R terminal",
+				"category": "R",
+				"command": "r.createRTerm"
+			},
+			{
+				"title": "Run Source",
+				"category": "R",
+				"command": "r.runSource",
+				"icon": {
+					"light": "./images/DownloadFile.ico",
+					"dark": "./images/DownloadFile_inverse.ico"
+				}
+			},
+			{
+				"title": "Run Source with Echo",
+				"category": "R",
+				"command": "r.runSourcewithEcho"
+			},
+			{
+				"title": "Run Selection/Line",
+				"category": "R",
+				"command": "r.runSelection"
+			},
+			{
+				"title": "Create gitignore",
+				"category": "R",
+				"command": "r.createGitignore"
+			},
+			{
+				"title": "Preview Dataframe",
+				"category": "R",
+				"command": "r.previewDataframe"
+			},
+			{
+				"title": "Preview Environment",
+				"category": "R",
+				"command": "r.previewEnvironment"
+			},
+			{
+				"title": "Load All",
+				"category": "R",
+				"command": "r.loadAll"
+			},
+			{
+				"title": "Test Package",
+				"category": "R",
+				"command": "r.test"
+			},
+			{
+				"title": "Install Package",
+				"category": "R",
+				"command": "r.install"
+			},
+			{
+				"title": "Build Package",
+				"category": "R",
+				"command": "r.build"
+			},
+			{
+				"title": "Document",
+				"category": "R",
+				"command": "r.document"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "r.runSelection",
+				"key": "Ctrl+enter",
+				"mac": "cmd+enter",
+				"when": "editorTextFocus && editorLangId == 'r'"
+			},
+			{
+				"command": "r.runSelection",
+				"key": "Ctrl+enter",
+				"mac": "cmd+enter",
+				"when": "editorTextFocus && editorLangId == 'rmd'"
+			},
+			{
+				"command": "r.runSource",
+				"key": "shift+Ctrl+s",
+				"mac": "shift+cmd+s",
+				"when": "editorTextFocus && editorLangId == 'r'"
+			},
+			{
+				"command": "r.runSourcewithEcho",
+				"key": "shift+Ctrl+enter",
+				"mac": "shift+cmd+enter",
+				"when": "editorTextFocus && editorLangId == 'r'"
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"when": "editorLangId == r",
+					"command": "r.runSource",
+					"group": "navigation"
+				}
+			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "r",
+			"properties": {
+				"r.rterm.windows": {
+					"type": "string",
+					"default": "C:\\Program Files\\R\\R-3.5.0\\bin\\x64\\R.exe",
+					"description": "R.exe path for windows"
+				},
+				"r.rterm.mac": {
+					"type": "string",
+					"default": "/usr/local/bin/R",
+					"description": "R path for Mac OS X"
+				},
+				"r.rterm.linux": {
+					"type": "string",
+					"default": "/usr/bin/R",
+					"description": "R path for Linux"
+				},
+				"r.rterm.option": {
+					"type": "array",
+					"default": [
+						"--no-save",
+						"--no-restore",
+						"--no-site-file"
+					],
+					"description": "R command line options (i.e: --vanilla)"
+				},
+				"r.source.encoding": {
+					"type": "string",
+					"default": "UTF-8",
+					"description": "An optional encoding to pass to R when executing the file, i.e. 'source(FILE, encoding=ENCODING)'"
+				},
+				"r.source.focus": {
+					"type": "string",
+					"default": "editor",
+					"enum": [
+						"editor",
+						"terminal"
+					],
+					"description": "Keeping focus when running"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "^5.0.4",
+		"@types/mocha": "^5.2.5",
+		"@types/node": "^10.12.12",
+		"mocha": "^5.2.0",
+		"node-atomizr": "^0.6.1",
+		"tslint": "^5.11.0",
+		"typescript": "^3.2.2",
+		"vscode": "^1.1.26",
+		"yamljs": "^0.3.0"
+	},
+	"dependencies": {
+		"fs-extra": "^7.0.1",
+		"path": "^0.12.7",
+		"winattr": "^2.0.0"
+	},
+	"__metadata": {
+		"id": "4dfff9f4-ff9b-47bb-b0d1-c54e18d8febb",
+		"publisherId": "b9ef81dd-63e0-4960-8e98-5b1004f41595",
+		"publisherDisplayName": "Yuki Ueda"
+	}
+}
