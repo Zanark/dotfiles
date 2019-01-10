@@ -1,0 +1,18 @@
+[2019-01-10 16:18:16.533] [exthost] [info] extension host started
+[2019-01-10 16:18:16.576] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-01-10 16:18:16.576] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/Softwares/VSCode-linux-x64/resources/app/extensions/debug-auto-launch/dist/extension
+[2019-01-10 16:18:16.733] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-01-10 16:18:16.734] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/Softwares/VSCode-linux-x64/resources/app/extensions/emmet/dist/extension
+[2019-01-10 16:18:16.796] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-01-10 16:18:16.796] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/Softwares/VSCode-linux-x64/resources/app/extensions/git/dist/main
+[2019-01-10 16:18:17.021] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-01-10 16:18:17.021] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/Softwares/VSCode-linux-x64/resources/app/extensions/merge-conflict/dist/extension
+[2019-01-10 16:18:17.216] [exthost] [info] ExtensionService#_doActivateExtension lihui.vs-color-picker {"startup":true,"activationEvent":"*"}
+[2019-01-10 16:18:17.216] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/.vscode/extensions/lihui.vs-color-picker-1.0.0/out/src/extension
+[2019-01-10 16:18:17.273] [exthost] [info] eager extensions activated
+[2019-01-10 17:21:46.405] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-01-10 17:21:46.406] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/Softwares/VSCode-linux-x64/resources/app/extensions/configuration-editing/dist/extension
+[2019-01-10 17:21:46.659] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-01-10 17:21:46.660] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/Softwares/VSCode-linux-x64/resources/app/extensions/json-language-features/client/dist/jsonMain
+[2019-01-10 17:21:46.809] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-01-10 17:21:46.809] [exthost] [info] ExtensionService#loadCommonJSModule /home/zanark/Softwares/VSCode-linux-x64/resources/app/extensions/typescript-language-features/dist/extension

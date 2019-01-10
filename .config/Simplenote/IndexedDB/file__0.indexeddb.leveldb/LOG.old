@@ -1,3 +1,3 @@
-2019/01/10-00:00:59.334 1543 Reusing MANIFEST /home/zanark/.config/Simplenote/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
-2019/01/10-00:00:59.335 1543 Recovering log #3
-2019/01/10-00:00:59.844 1543 Reusing old log /home/zanark/.config/Simplenote/IndexedDB/file__0.indexeddb.leveldb/000003.log 
+2019/01/10-18:22:17.753 1563 Reusing MANIFEST /home/zanark/.config/Simplenote/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2019/01/10-18:22:17.754 1563 Recovering log #3
+2019/01/10-18:22:18.369 1563 Reusing old log /home/zanark/.config/Simplenote/IndexedDB/file__0.indexeddb.leveldb/000003.log 

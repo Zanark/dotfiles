@@ -10,7 +10,7 @@
                 "mode": 1,
                 "x": 14,
                 "y": 44,
-                "width": 619,
+                "width": 1892,
                 "height": 1022
             }
         }
@@ -24,12 +24,15 @@
             "file:///home/zanark/CODING/FML"
         ],
         "files2": [
+            "file:///etc/X11/xorg.conf",
+            "file:///home/zanark/.config/libinput-gestures.conf",
+            "file:///usr/share/mint-artwork/xfce/Terminal/terminalrc",
+            "file:///home/zanark/.config/xfce4/terminal/terminalrc",
             "file:///home/zanark/test",
             "file:///home/zanark/.config/polybar/config.purple",
             "file:///home/zanark/.config/gtk-3.0/gtk.css",
             "file:///home/zanark/.config/polybar/config.temp",
             "file:///home/zanark/.config/polybar/config",
-            "file:///home/zanark/.config/libinput-gestures.conf",
             "file:///home/zanark/.Xdefaults",
             "file:///home/zanark/CODING/bash-it/themes/redline/powerline.base.bash",
             "file:///home/zanark/.Xresorces",

@@ -94,7 +94,7 @@ padding-top = 2
 
 ;font-0 = "Fantasque Sans Mono:pixelsize=12;2"
 font-1 = "Material Icons:size=13;4"
-font-2 = "FontAwesome:size=8;3"
+font-2 = "FontAwesome:size=12;3"
 ;font-0 = "NotoSans-Regular:size=9;2"
 ;font-4 = "Material Icons:size=13;4"
 font-0 = "Unifont:size=10;2"
@@ -189,83 +189,8 @@ type = internal/fs
 mount-0 = /
 label-mounted = %{F#e60053}%percentage_used%%%{F-} used of %mountpoint%
 
-;----------------------------------------------------------------------------------------------------------------------------
+;=========================================================================================
 
-[module/bspwm]
-type = internal/bspwm
-
-enable-scroll = false
-
-format = <label-state> <label-mode>
-;format = <label-monitor> <label-state> <label-mode>
-;pin-workspaces = false
-
-;ws-icon-0 = term;
-;ws-icon-1 = web;
-;ws-icon-2 = code;
-;ws-icon-3 = music;
-;ws-icon-4 = irssi;
-;ws-icon-default = 
-ws-icon-default = x
-
-inline-mode = true
-
-;label-focused = %icon%
-label-focused = o
-label-focused-background = #383838
-label-focused-foreground = #fff
-label-focused-overline = ${root.bspwm-focused-overline}
-label-focused-underline = ${root.bspwm-focused-underline}
-label-focused-padding = 2
-
-label-focused-occupied = %{O-1}⏺%{O-1}
-label-focused-occupied-background = ${self.label-focused-background}
-label-focused-occupied-foreground = ${self.label-focused-foreground}
-label-focused-occupied-overline = ${self.label-focused-overline}
-label-focused-occupied-underline = ${self.label-focused-underline}
-label-focused-occupied-padding = ${self.label-focused-padding}
-
-;label-occupied = %icon%
-label-occupied = %{O-1}⏺%{O-1}
-label-occupied-padding = 2
-
-;label-urgent = %icon%
-label-urgent = !
-label-urgent-background = #bd2c40
-label-urgent-padding = 2
-
-;label-empty = %icon%
-label-empty = x
-label-empty-foreground = #444
-label-empty-padding = 2
-
-label-monocle = 
-label-monocle-padding = 2
-label-monocle-background = #171717
-label-monocle-foreground = ${colors.accent}
-
-label-floating = 
-label-floating-padding = 2
-label-floating-background = #171717
-label-floating-foreground = ${colors.accent}
-
-label-locked = locked
-label-locked-padding = 1
-label-sticky = sticky
-label-sticky-padding = 1
-label-private = private
-label-private-padding = 1
-;label-pseudotiled = pseudo
-;label-pseudotiled-padding = 2
-;label-pseudotiled-background = #f09
-;label-tiled = tiled
-;label-tiled-padding = 2
-;label-tiled-background = #f90
-
-label-dimmed-background = ${root.background}
-label-dimmed-overline = ${root.background}
-label-dimmed-underline = ${root.background}
-label-dimmed-active-foreground = #f00
 
 ;--------------------------------------------------------- i3 MODULE ----------------------------------------------------
 
@@ -279,26 +204,38 @@ wrapping-scroll = true
 
 format = <label-state> <label-mode>
 
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;♬
+ws-icon-default = 
+
 label-mode = %mode%
 label-mode-padding = 2
 label-mode-background = ${colors.accent}
 
-label-focused = %index%
+label-focused = %icon%
 label-focused-background = ${colors.focused-background}
 label-focused-foreground = ${colors.focused-foreground}
 label-focused-overline= ${colors.focused-overline}
 label-focused-underline= ${colors.focused-underline}
 label-focused-padding = 2
 
-label-unfocused = %index%
+label-unfocused = %icon%
 label-unfocused-padding = 2
 label-unfocused-foreground = ${colors.unfocused-foreground}
 
-label-urgent = %index%!
+label-urgent = %icon%!
 label-urgent-background = ${colors.urgent-background}
 label-urgent-padding = 2
 
-label-visible = %index%
+label-visible = %icon%
 label-visible-padding = 2
 
 ;---------------------------------------------------------- CPU MODULE ----------------------------------------------------
@@ -432,7 +369,7 @@ ramp-volume-2 = 🔊
 type = internal/battery
 full-at = 98
 
-format-charging = <animation-charging> <label-charging>
+format-charging = <animation-charging><label-charging>
 format-discharging = <ramp-capacity> <label-discharging>
 format-full = <ramp-capacity> <label-full>
 
@@ -441,24 +378,30 @@ ramp-capacity-0-foreground = #f53c3c
 ramp-capacity-1 = 
 ramp-capacity-1-foreground = #ffa900
 ramp-capacity-2 = 
+ramp-capacity-2-foreground = #efff49
 ramp-capacity-3 = 
+ramp-capacity-3-foreground = #b6ff49
 ramp-capacity-4 = 
+ramp-capacity-4-foreground = #98ff49
 
-bar-capacity-width = 10
-bar-capacity-format = %{+u}%{+o}%fill%%empty%%{-u}%{-o}
-bar-capacity-fill = █
-bar-capacity-fill-foreground = #ddffffff
-bar-capacity-fill-font = 3
-bar-capacity-empty = █
-bar-capacity-empty-font = 3
-bar-capacity-empty-foreground = #44ffffff
+# bar-capacity-width = 10
+# bar-capacity-format = %{+u}%{+o}%fill%%empty%%{-u}%{-o}s
+# bar-capacity-fill = █
+# bar-capacity-fill-foreground = #ddffffff
+# bar-capacity-fill-font = 3
+# bar-capacity-empty = █
+# bar-capacity-empty-font = 3
+# bar-capacity-empty-foreground = #44ffffff
 
+label-charging = 
+label-charging-foreground = #e7ff4f
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
+animation-charging-foreground = #e7ff4f
 
 ;----------------------------------------------------------------------------------------------------------------------------
 
