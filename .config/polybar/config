@@ -98,6 +98,7 @@ font-2 = "FontAwesome:size=12;3"
 ;font-0 = "NotoSans-Regular:size=9;2"
 ;font-4 = "Material Icons:size=13;4"
 font-0 = "Unifont:size=10;2"
+;font-3 = "Noto Color Emoji:size=2;2"
 
 ;==========================================================
 
@@ -264,16 +265,17 @@ interface = wlp3s0
 interval = 3.0
 ping-interval = 10
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = <ramp-signal><label-connected>
+
 label-connected = %essid% %downspeed:8%
 label-disconnected =    not connected
 label-disconnected-foreground = #66
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-0 = 1
+ramp-signal-1 = 2
+ramp-signal-2 = 3
+ramp-signal-3 = 4
+ramp-signal-4 = 5
 
 animation-packetloss-0 = 
 animation-packetloss-0-foreground = #ffa64c
@@ -303,21 +305,35 @@ label-connected = %local_ip%
 
 [module/date]
 type = internal/date
-label = %{F#666}%{F-} %date%  %{F#e60053}%{F-} %time%
-date = %Y-%m-%d
+
+; Available tags:
+;   <label> (default)
+format = <label>
+format-background = ${colors.background}
+format-foreground = ${colors.foreground}
+
+; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
+date = %Y-%m-%d%
+
+; Optional time format
 time = %H:%M
-interval = 5
 
-;-------------------------------------------------------- BRIGHTNESS MODULE ----------------------------------------------
+; Available tokens:
+;   %date%
+;   %time%
+; Default: %date%
+label = %date%  |  %time%
+#label-font = 3
+label-foreground = #f4ff5e
 
-[module/xbacklight]
-type = internal/xbacklight
-format = <ramp> <label>
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = #666
-label-foreground = ${root.foreground}
+; Seconds to sleep between updates
+interval = 1.0
+
+; if `date-alt` or `time-alt` is defined, clicking
+; the module will toggle between formats
+;date-alt = %A, %d %B %Y
+;time-alt = %H:%M:%S
+
 
 ;--------------------------------------------------------- VOLUME MODULE ----------------------------------------------------
 
@@ -340,7 +356,7 @@ interval = 5
 ;   <label-volume> (default)
 ;   <ramp-volume>
 ;   <bar-volume>
-format-volume = <ramp-volume> <label-volume>
+format-volume = <ramp-volume><label-volume>
 
 ; Available tags:
 ;   <label-muted> (default)
@@ -354,13 +370,13 @@ format-volume = <ramp-volume> <label-volume>
 
 ; Available tokens:
 ;   %percentage% (default)
-label-muted = 🔇 muted
+label-muted = muted
 label-muted-foreground = #666
 
 ; Only applies if <ramp-volume> is used
-ramp-volume-0 = 🔈
-ramp-volume-1 = 🔉
-ramp-volume-2 = 🔊
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
 
 
 ;----------------------------------------------------- BATTERY MODULE -----------------------------------------------------
@@ -370,8 +386,16 @@ type = internal/battery
 full-at = 98
 
 format-charging = <animation-charging><label-charging>
-format-discharging = <ramp-capacity> <label-discharging>
-format-full = <ramp-capacity> <label-full>
+format-discharging = <ramp-capacity><label-discharging>
+format-full = <ramp-capacity><label-full>
+
+format-full-background = #f4ff5e
+format-full-foreground = #0c5e10
+
+label-charging =  %percentage%%
+label-discharging = %percentage%% %time%
+label-full = %percentage%%
+
 
 ramp-capacity-0 = 
 ramp-capacity-0-foreground = #f53c3c
@@ -393,7 +417,6 @@ ramp-capacity-4-foreground = #98ff49
 # bar-capacity-empty-font = 3
 # bar-capacity-empty-foreground = #44ffffff
 
-label-charging = 
 label-charging-foreground = #e7ff4f
 animation-charging-0 = 
 animation-charging-1 = 
