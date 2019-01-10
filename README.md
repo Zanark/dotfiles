@@ -1,3 +1,3 @@
 #   My Dotfiles
 
-![ScreenShot](./Screenshots/SS3.png)
+![ScreenShot](./Screenshots/SS4.png)

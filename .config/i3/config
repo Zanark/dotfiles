@@ -192,7 +192,7 @@ bindsym Mod4+v exec "i3lock-fancy -gp"
 
 # #i3-gaps config
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
 
 gaps inner 15
 gaps outer 10
@@ -201,6 +201,7 @@ gaps right 0
 gaps bottom 0
 gaps left 0
 #smart_gaps on
+smart_borders on
 
 set $mode_gaps Gaps: (o)uter, (i)nner, (h)orizontal, (v)ertical, (t)op, (r)ight, (b)ottom, (l)eft
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -354,7 +355,7 @@ exec syndaemon -i 0.8 -d -K
 exec --no-startup-id libinput-gestures-setup start
 
 
-# #i3 Space theme settings                -----------------------------
+# #i3 Border Settings                -----------------------------
 # new_window pixel 2
 # new_float pixel 2
 
@@ -365,6 +366,21 @@ exec --no-startup-id libinput-gestures-setup start
 # bindsym $mod+u border pixel 2
 # bindsym $mod+y border pixel 2
 # bindsym $mod+n border pixel 2
+
+#set $fbc  #715d75
+#set $unbc  #5d6d6c
+#set $urbc  #ff6363
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #550055 #550055 #ffffff #2e9ef4   #811996
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #5d6d6c #222222 #888888 #292d2e   #2c272d
+client.urgent           #555555 #555555 #ffffff #900000   #ff6363
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+#client.focused          $fbc
+#client.unfocused        $unbc
+#client.urgent           $urbc
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
