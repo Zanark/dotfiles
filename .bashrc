@@ -157,5 +157,5 @@ source "$BASH_IT"/bash_it.sh
 #--------------------------------------------------
 
 #output padding
-trap 'printf "\n\n"' DEBUG
+trap 'printf "\n"' DEBUG
 
