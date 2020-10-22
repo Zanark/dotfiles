@@ -1,0 +1,195 @@
+#
+#	                 ██      ██          ██
+#	                ░██     ░██         ░██
+#	  ██████ ██   ██░██     ░██  ██     ░██
+#	 ██░░░░ ░░██ ██ ░██████ ░██ ██   ██████
+#	░░█████  ░░███  ░██░░░██░████   ██░░░██
+#	 ░░░░░██  ██░██ ░██  ░██░██░██ ░██  ░██
+#	 ██████  ██ ░░██░██  ░██░██░░██░░██████
+#	░░░░░░  ░░   ░░ ░░   ░░ ░░  ░░  ░░░░░░
+#
+#		Zanark's sxhkd config
+#
+
+# ===================================================
+# I. 	wm independent hotkeys
+# II.	bspwm hotkeys
+# 	IIA.	bspwm node hotkeys
+# 	IIB.	bspwm window layouts
+# 	IIC.	bspwm window state/flags
+# III.	window focus
+# 	IIIA.	directional focus and swap windows
+# 	IIIB.	role based focus on windows
+# 	IIIC.	cycle focus
+# 	IIID.	alt + Tab functionality
+# 	IIIE.	history based focus
+# IV.	workspace hotkeys
+# V.	preselect area hotkeys
+# VI.	resize window
+# VII.	move window
+# ===================================================
+
+
+# I.	wm independent hotkeys
+
+# terminal emulator
+super + Return
+	alacritty
+
+# dmenu
+super + m
+	dmenu_run
+
+# reload sxhkd config
+super + shift + r
+	pkill -USR1 -x sxhkd
+
+
+# II.	bspwm hotkeys
+
+# quit bspwm
+super + shift + e
+	bspc quit
+
+# restart bspwm
+super + r
+	bspc wm -r
+
+# IIA.	bspwm node hotkeys
+
+# close and kill
+# super + {_,shift + }w
+#	bspc node -{c,k}
+
+# kill window
+alt + shift + q
+	bspc node -k
+
+# IIB.	bspwm window layouts
+
+# alternate between the tiled and monocle layout
+# ==> monocle == fullscreen and switch windows using j,k keys
+super + shift + m
+	bspc desktop -l next
+
+# send the newest marked node to the newest preselected node
+# ???
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# swap the current node and the biggest node
+# ==> will swap the current node with the biggets available node
+# ==> nodes on other ws are also included
+super + g
+	bspc node -s biggest
+
+# IIC.	bspwm window state/flags
+
+# setting window states to
+# tiled 	==> super + t
+# pseudo_tiled 	==> super + shift + t
+# floating 	==> super + shift + space
+# fullscreen 	==> super + f
+super + {t,shift + t,shift + space,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# set the node flags
+# ???
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+# III.	window focus
+
+# IIIA. directional focus and swap windows
+
+# focus/swap the node in the given direction
+# focus left 	==> alt + h
+# focus down 	==> alt + j
+# focus up 	==> alt + k
+# focus right 	==> alt + l
+# swap left	==> alt + shift + h
+# swap down	==> alt + shift + j
+# swap up	==> alt + shift + k
+# swap right	==> alt + shift + l
+alt + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# IIIB. role based focus on windows
+ 
+# focus the node for the given path jump
+# focus on parent 	==> super + p
+# focus on sibling	==> super + b
+# focus on first node	==> super + ,
+# focus on second node 	==> super + .
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# IIIC. cycle focus
+
+# focus the next/previous node in the current desktop
+# cycle focus in the current desktop
+super + {_,shift + }c
+	bspc node -f {next,prev}.local
+
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# IIID. alt + Tab functionality
+
+# focus the last node 		==> alt + Tab
+# focus the last desktop 	==> super + Tab
+alt + Tab
+	bspc node -f last.local
+
+super + Tab
+	bspc desktop -f last
+
+# IIIE.	history based focus
+
+# focus the older or newer node in the focus history
+super + {o,i}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# IV.	workspace hotkeys
+
+# focus on selected ws 	==> super + ws number
+# send node to ws	==> super + ws number
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# V.	preselect area hotkeys
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+# VI.	resize windows
+
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# VII.	move window
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}

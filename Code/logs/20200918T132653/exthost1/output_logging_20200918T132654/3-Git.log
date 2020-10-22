@@ -1,0 +1,130 @@
+Looking for git in: git
+Using git 2.28.0 from git
+> git rev-parse --git-dir
+Open repository: /home/zanark/devdesk/blog
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :_includes/tagcloud.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_includes/tagcloud.html
+> git cat-file -s 9ac90ec4013bd357662e0c4dcf8e1e6059c79ebb
+> git show --textconv :_includes/author.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_includes/author.html
+> git cat-file -s 8597a220f437c1f50c4d555be81f5dca2b369341
+> git show --textconv :_includes/disqus.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_includes/disqus.html
+> git cat-file -s b3ea4ab160b95cfc735cb9f2f1b31f93ce07c687
+> git show --textconv :_includes/footer.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_includes/footer.html
+> git cat-file -s 52aa27319b2450b70f0d7b343239b5a01310b01e
+> git show --textconv :_includes/head.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_includes/head.html
+> git cat-file -s 6c05ad12c1d5b1533b641e8662924f2a2d2f2b1a
+> git show --textconv :_includes/header.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_includes/header.html
+> git cat-file -s 6c833b1188e5877263b0fc736e5cfdf901a16cd9
+> git show --textconv :_includes/pagination.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_includes/pagination.html
+> git cat-file -s 1c8c8531e8e33260bc37e47e7ccf5806c36e7dc4
+> git show --textconv :_includes/tagcloud.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_includes/tagcloud.html
+> git cat-file -s 9ac90ec4013bd357662e0c4dcf8e1e6059c79ebb
+> git check-ignore -v -z --stdin
+> git show --textconv :_layouts/default.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_layouts/default.html
+> git cat-file -s 0476fd6e584b23a50f4d21949d336e75887e78e5
+> git show --textconv :_layouts/home.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_layouts/home.html
+> git cat-file -s 9847271ca3dcadd9010f1b5b5709f745c2fff463
+> git show --textconv :_layouts/post.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_layouts/post.html
+> git cat-file -s 87d413b0d779456dd1d3413846acd50a42e4d6a6
+> git show --textconv :_layouts/tag_page.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_layouts/tag_page.html
+> git cat-file -s c498a2928b7cb452b21b3aa61df0cf6cbb24ce19
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :_layouts/post.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_layouts/post.html
+> git cat-file -s 87d413b0d779456dd1d3413846acd50a42e4d6a6
+> git show --textconv :_layouts/home.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_layouts/home.html
+> git cat-file -s 9847271ca3dcadd9010f1b5b5709f745c2fff463
+> git show --textconv :_layouts/post.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_layouts/post.html
+> git cat-file -s 87d413b0d779456dd1d3413846acd50a42e4d6a6
+> git show --textconv :_layouts/tag_page.html
+> git ls-files --stage -- /home/zanark/devdesk/blog/_layouts/tag_page.html
+> git cat-file -s c498a2928b7cb452b21b3aa61df0cf6cbb24ce19
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :about.md
+> git ls-files --stage -- /home/zanark/devdesk/blog/about.md
+> git cat-file -s 8b4e0b28c83e707c74fcfc6a53f3f084033cfd58

@@ -1,0 +1,45 @@
+[2020-09-18 13:22:48.182] [sharedprocess] [info] main {"machineId":"62862b62902f68633ef78313c8101363c3926b9035850228396848f381ff7d9b","windowId":2}
+[2020-09-18 13:22:48.221] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/zanark/.config/Code/User/snippets'
+[2020-09-18 13:23:28.200] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-09-18 13:23:43.461] [sharedprocess] [info] Installing extension: hilalh.hyper-dracula-vscode-theme
+[2020-09-18 13:23:44.010] [sharedprocess] [info] Downloaded extension: hilalh.hyper-dracula-vscode-theme /home/zanark/.config/Code/CachedExtensionVSIXs/hilalh.hyper-dracula-vscode-theme-0.1.1
+[2020-09-18 13:23:44.060] [sharedprocess] [info] Extracted extension to /home/zanark/.vscode/extensions/.hilalh.hyper-dracula-vscode-theme-0.1.1: hilalh.hyper-dracula-vscode-theme
+[2020-09-18 13:23:44.061] [sharedprocess] [info] Renamed to /home/zanark/.vscode/extensions/hilalh.hyper-dracula-vscode-theme-0.1.1
+[2020-09-18 13:23:44.063] [sharedprocess] [info] Installation completed. hilalh.hyper-dracula-vscode-theme
+[2020-09-18 13:23:44.067] [sharedprocess] [info] Extensions installed successfully: hilalh.hyper-dracula-vscode-theme
+[2020-09-18 13:23:54.483] [sharedprocess] [info] Uninstalling extension: hilalh.hyper-dracula-vscode-theme
+[2020-09-18 13:23:54.497] [sharedprocess] [info] Successfully uninstalled extension: hilalh.hyper-dracula-vscode-theme
+[2020-09-18 13:24:01.451] [sharedprocess] [info] Installing extension: gerane.theme-dark-dracula
+[2020-09-18 13:24:01.815] [sharedprocess] [info] Downloaded extension: gerane.theme-dark-dracula /home/zanark/.config/Code/CachedExtensionVSIXs/gerane.theme-dark-dracula-0.0.5
+[2020-09-18 13:24:01.875] [sharedprocess] [info] Extracted extension to /home/zanark/.vscode/extensions/.gerane.theme-dark-dracula-0.0.5: gerane.theme-dark-dracula
+[2020-09-18 13:24:01.876] [sharedprocess] [info] Renamed to /home/zanark/.vscode/extensions/gerane.theme-dark-dracula-0.0.5
+[2020-09-18 13:24:01.877] [sharedprocess] [info] Installation completed. gerane.theme-dark-dracula
+[2020-09-18 13:24:01.880] [sharedprocess] [info] Extensions installed successfully: gerane.theme-dark-dracula
+[2020-09-18 13:24:21.727] [sharedprocess] [info] Installing extension: pkief.material-icon-theme
+[2020-09-18 13:24:22.562] [sharedprocess] [info] Downloaded extension: pkief.material-icon-theme /home/zanark/.config/Code/CachedExtensionVSIXs/pkief.material-icon-theme-4.3.0
+[2020-09-18 13:24:23.384] [sharedprocess] [info] Extracted extension to /home/zanark/.vscode/extensions/.pkief.material-icon-theme-4.3.0: pkief.material-icon-theme
+[2020-09-18 13:24:23.384] [sharedprocess] [info] Renamed to /home/zanark/.vscode/extensions/pkief.material-icon-theme-4.3.0
+[2020-09-18 13:24:23.385] [sharedprocess] [info] Installation completed. pkief.material-icon-theme
+[2020-09-18 13:24:23.391] [sharedprocess] [info] Extensions installed successfully: pkief.material-icon-theme
+[2020-09-18 13:24:52.739] [sharedprocess] [info] Installing extension: zhuangtongfa.material-theme
+[2020-09-18 13:24:53.216] [sharedprocess] [info] Downloaded extension: zhuangtongfa.material-theme /home/zanark/.config/Code/CachedExtensionVSIXs/zhuangtongfa.material-theme-3.8.7
+[2020-09-18 13:24:53.431] [sharedprocess] [info] Extracted extension to /home/zanark/.vscode/extensions/.zhuangtongfa.material-theme-3.8.7: zhuangtongfa.material-theme
+[2020-09-18 13:24:53.431] [sharedprocess] [info] Renamed to /home/zanark/.vscode/extensions/zhuangtongfa.material-theme-3.8.7
+[2020-09-18 13:24:53.432] [sharedprocess] [info] Installation completed. zhuangtongfa.material-theme
+[2020-09-18 13:24:53.435] [sharedprocess] [info] Extensions installed successfully: zhuangtongfa.material-theme
+[2020-09-18 13:25:03.618] [sharedprocess] [info] Uninstalling extension: zhuangtongfa.material-theme
+[2020-09-18 13:25:03.630] [sharedprocess] [info] Successfully uninstalled extension: zhuangtongfa.material-theme
+[2020-09-18 13:25:08.160] [sharedprocess] [info] Installing extension: dracula-theme.theme-dracula
+[2020-09-18 13:25:08.647] [sharedprocess] [info] Downloaded extension: dracula-theme.theme-dracula /home/zanark/.config/Code/CachedExtensionVSIXs/dracula-theme.theme-dracula-2.22.1
+[2020-09-18 13:25:08.674] [sharedprocess] [info] Extracted extension to /home/zanark/.vscode/extensions/.dracula-theme.theme-dracula-2.22.1: dracula-theme.theme-dracula
+[2020-09-18 13:25:08.674] [sharedprocess] [info] Renamed to /home/zanark/.vscode/extensions/dracula-theme.theme-dracula-2.22.1
+[2020-09-18 13:25:08.674] [sharedprocess] [info] Installation completed. dracula-theme.theme-dracula
+[2020-09-18 13:25:08.678] [sharedprocess] [info] Extensions installed successfully: dracula-theme.theme-dracula
+[2020-09-18 13:25:29.181] [sharedprocess] [info] Uninstalling extension: gerane.theme-dark-dracula
+[2020-09-18 13:25:29.187] [sharedprocess] [info] Successfully uninstalled extension: gerane.theme-dark-dracula
+[2020-09-18 13:26:04.502] [sharedprocess] [info] Installing extension: mathcale.theme-dracula-refined
+[2020-09-18 13:26:06.317] [sharedprocess] [info] Downloaded extension: mathcale.theme-dracula-refined /home/zanark/.config/Code/CachedExtensionVSIXs/mathcale.theme-dracula-refined-2.22.1
+[2020-09-18 13:26:06.452] [sharedprocess] [info] Extracted extension to /home/zanark/.vscode/extensions/.mathcale.theme-dracula-refined-2.22.1: mathcale.theme-dracula-refined
+[2020-09-18 13:26:06.452] [sharedprocess] [info] Renamed to /home/zanark/.vscode/extensions/mathcale.theme-dracula-refined-2.22.1
+[2020-09-18 13:26:06.456] [sharedprocess] [info] Installation completed. mathcale.theme-dracula-refined
+[2020-09-18 13:26:06.459] [sharedprocess] [info] Extensions installed successfully: mathcale.theme-dracula-refined

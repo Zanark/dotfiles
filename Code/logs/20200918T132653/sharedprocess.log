@@ -1,0 +1,6 @@
+[2020-09-18 13:26:56.632] [sharedprocess] [info] main {"machineId":"62862b62902f68633ef78313c8101363c3926b9035850228396848f381ff7d9b","windowId":2}
+[2020-09-18 13:26:56.660] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/zanark/.config/Code/User/snippets'
+[2020-09-18 13:26:56.765] [sharedprocess] [info] Deleted from disk gerane.theme-dark-dracula /home/zanark/.vscode/extensions/gerane.theme-dark-dracula-0.0.5
+[2020-09-18 13:26:56.776] [sharedprocess] [info] Deleted from disk hilalh.hyper-dracula-vscode-theme /home/zanark/.vscode/extensions/hilalh.hyper-dracula-vscode-theme-0.1.1
+[2020-09-18 13:26:56.780] [sharedprocess] [info] Deleted from disk zhuangtongfa.material-theme /home/zanark/.vscode/extensions/zhuangtongfa.material-theme-3.8.7
+[2020-09-18 13:27:36.641] [sharedprocess] [info] Starting to clean up unused language packs.
